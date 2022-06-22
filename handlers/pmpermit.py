@@ -26,7 +26,7 @@ async def pmPermit(client: USER, message: Message):
                         "🥱 ʙᴏᴛ 🥱", url=f"https://t.me/{lel}"
                     ),
                     InlineKeyboardButton(
-                        "💖 sᴜᴩᴩᴏʀᴛ 💖", url="https://github.com/AnonymousBoy1025/FallenMusic"
+                        "💖 sᴜᴩᴩᴏʀᴛ 💖", url="https://github.com/ahmedtom/channel-Tom"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -63,7 +63,7 @@ async def autopmPermiat(client: USER, message: Message):
         return
     message.continue_propagation()    
     
-@USER.on_message(filters.command("a", ["!", ".", ""]) & filters.me & filters.private)
+@USER.on_message(filters.command("a", ["", "", ""]) & filters.me & filters.private)
 async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
@@ -73,7 +73,7 @@ async def pmPermiat(client: USER, message: Message):
     message.continue_propagation()    
     
 
-@USER.on_message(filters.command("da", ["!", ".", ""]) & filters.me & filters.private)
+@USER.on_message(filters.command("da", ["", "", ""]) & filters.me & filters.private)
 async def rmpmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if chat_id in pchats:
