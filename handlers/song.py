@@ -45,11 +45,11 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "» عيوني لضلك غشيم اكتب شي عشان ابحث."
+            "» عيوني اكتب الي عاوزني ابحث عنو."
         )
         print(str(e))
         return
-    m.edit(f"» ابشر الحين انت فتح مخك قاعد احملك {bn} ​.")
+    m.edit(f"» استنى بحمل   {bn} ​.")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
